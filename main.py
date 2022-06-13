@@ -1,2 +1,2 @@
 import streamlit as st
-st.write('Đây là Huế nè')
+st.header('Đây là Huế nè')
