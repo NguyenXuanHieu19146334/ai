@@ -9,6 +9,8 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_in
 
 model = tf.keras.models.load_model("hieu.h5")
 
+st.header('Nhận diện tỉ lệ giống nhau của diễn viên')
+st.subheader('Nguyễn Xuân Hiếu 19146334')
 ### load file
 uploaded_file = st.file_uploader("Choose an image file", type=["jpg","jpeg","png"])
     
