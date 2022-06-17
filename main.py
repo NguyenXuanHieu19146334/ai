@@ -34,4 +34,8 @@ if uploaded_file is not None:
     if Genrate_pred:
          prediction = model.predict(img).argmax()
          st.title("Predicted Label for the image is {}".format(map_dict [prediction]))
+        y_pred = model.predict(img)             
+        a = y_pred.max()
+        a = a*100
+        st.write("**Accuracy:** ",a,"%")
         
